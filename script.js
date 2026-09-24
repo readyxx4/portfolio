@@ -28,6 +28,33 @@ themeToggle.addEventListener("click", () => {
 // =========================================================
 const sections = document.querySelectorAll("main .section");
 const navLinks = document.querySelectorAll(".nav-links a");
+const navMenu = document.getElementById("nav-links");
+const navToggle = document.getElementById("nav-toggle");
+
+function closeMobileNav() {
+  navMenu.classList.remove("is-open");
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "เปิดเมนู");
+}
+
+navToggle.addEventListener("click", () => {
+  const isOpen = navMenu.classList.toggle("is-open");
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+  navToggle.setAttribute("aria-label", isOpen ? "ปิดเมนู" : "เปิดเมนู");
+});
+
+navLinks.forEach((link) => link.addEventListener("click", closeMobileNav));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navMenu.classList.contains("is-open")) {
+    closeMobileNav();
+    navToggle.focus();
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 720) closeMobileNav();
+});
 
 const spyObserver = new IntersectionObserver(
   (entries) => {
