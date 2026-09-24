@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>รัฐติพงษ์ บุญปัน — Portfolio</title>
+  <meta name="description"
+    content="Portfolio ของรัฐติพงษ์ บุญปัน นักศึกษาสาขาเทคโนโลยีธุรกิจดิจิทัล ผู้สนใจงานพัฒนาเว็บ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <a href="#hero" class="logo">~/portfolio</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about" data-section="about">about</a>
+      <a href="#skills" data-section="skills">skills</a>
+      <a href="#projects" data-section="projects">projects</a>
+      <a href="#contact" data-section="contact">contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="สลับโหมดมืด/สว่าง">
+      <svg id="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="hero" class="section hero">
+      <div class="hero-text">
+        <p class="badge"><span class="dot"></span>พร้อมเริ่มฝึกงาน 9 พ.ย. 2569 - 26 ก.พ. 2570</p>
+        <h1 class="headline">Web Developer<br /><span class="accent">/</span> Mobile Developer </h1>
+        <p class="hero-sub">
+          นักศึกษาชั้นปีที่ 4 สาขาเทคโนโลยีธุรกิจดิจิทัล<br />
+          มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น<br />
+          คณะบริหารธุรกิจและเทคโนโลยีสารสนเทศ</br>
+          <i><b>กำลังมองหาที่ฝึกงานด้านพัฒนาเว็บและแอปพลิเคชัน</b></i>
+        </p>
+      </div>
+      <div class="hero-photo">
+        <!-- วางไฟล์รูปโปรไฟล์ไว้ที่ images/profile.jpg แล้วรูปจะขึ้นอัตโนมัติ -->
+        <img src="images/profile.jpg" alt="รูปโปรไฟล์ รัฐติพงษ์ บุญปัน"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="photo-fallback">RB</div>
+      </div>
+
+      <div class="terminal-card hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+          <span class="terminal-title">intro.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> who am i</p>
+          <strong>
+            <p class="indent" id="typed-line">&nbsp;</p>
+          </strong>
+          <p class="indent terminal-subtext">
+            นักศึกษาฝึกงาน สาย Web / Mobile Development
+          </p>
+          <p><span class="prompt">$</span> status --availability</p>
+          <p class="indent availability-line">
+            <span class="highlight">พร้อมเริ่มฝึกงาน 9 พ.ย. 2569 - 26 ก.พ. 2570</span>
+            <span class="availability-duration">(~3 เดือน)</span>
+          </p>
+        </div>
+      </div>
+
+      <a href="#projects" class="btn-primary">View Projects</a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="section-heading">
+        <h2>About Me</h2>
+        <span class="path-label">~/about</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>สวัสดีครับ ผมชื่อ <strong>รัฐติพงษ์ บุญปัน (อายุ 21 ปี)</strong> <br>
+            <strong>เป็นนักศึกษาชั้นปีที่ 4
+              คณะบริหารธุรกิจและเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีธุรกิจดิจิทัล มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน
+              วิทยาเขตขอนแก่น</strong> สนใจงานด้าน Web Developer และ Mobile Developer เป็นหลัก
+            ผ่านการพัฒนาโปรเจกต์จริงตั้งแต่ต้นจนจบ ทั้งฝั่งหน้าบ้าน หลังบ้าน และการเชื่อมต่อฐานข้อมูล
+          </p>
+          <p>ยินดีปฏิบัติงานในพื้นที่ <strong>จังหวัดขอนแก่น
+              และจังหวัดอื่นๆ</strong><br>พร้อมเรียนรู้เครื่องมือและระบบงานใหม่ ๆ ของสถานประกอบการอย่างรวดเร็ว</p>
+
+          <div class="trait">
+            <span class="chevron">›</span>
+            <div>
+              <h3>Analytical Thinking &amp; Attention to Detail</h3>
+              <p>
+                คิดวิเคราะห์เชิงระบบ ใส่ใจรายละเอียดของงาน
+                ตั้งแต่ขั้นตอนออกแบบจนถึงทดสอบ
+              </p>
+            </div>
+          </div>
+
+          <div class="trait">
+            <span class="chevron">›</span>
+            <div>
+              <h3>Self-Driven &amp; Continuous Learning</h3>
+              <p>
+                กระตือรือร้น ชอบค้นคว้าและเรียนรู้เทคโนโลยีใหม่
+                ด้วยตนเองอยู่เสมอ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+            <span class="terminal-title">status.json</span>
+          </div>
+          <div class="terminal-body kv-list">
+            <div class="kv-row">
+              <span>ชื่อ</span>
+              <strong>รัฐติพงษ์ บุญปัน</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>อายุ</span>
+              <strong>21 ปี</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>การศึกษา</span>
+              <strong>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน<br>วิทยาเขตขอนแก่น</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>สาขา</span>
+              <strong>เทคโนโลยีธุรกิจดิจิทัล</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>ชั้นปี</span>
+              <strong>ชั้นปีที่ 4</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>ตำแหน่ง</span>
+              <strong>Web / Mobile Developer</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>สถานที่</span>
+              <strong>ขอนแก่น และจังหวัดอื่นๆ</strong>
+            </div>
+
+            <div class="kv-row">
+              <span>ระยะเวลา</span>
+              <strong>~3 เดือน</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <h2>Skills</h2>
+        <span class="path-label">~/skills</span>
+      </div>
+
+      <!-- Programming Languages & Frameworks -->
+      <div class="skill-group">
+        <p class="skill-label">
+          <span class="dot"></span>
+          PROGRAMMING LANGUAGES &amp; FRAMEWORKS
+        </p>
+
+        <div class="skill-icons">
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/php.png" alt="PHP"></div>
+            <span>PHP</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/java.png" alt="Java"></div>
+            <span>Java</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/javascript.png" alt="JavaScript"></div>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/html.png" alt="HTML"></div>
+            <span>HTML</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/css.png" alt="CSS"></div>
+            <span>CSS</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/react.webp" alt="React"></div>
+            <span>React</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/laravel.webp" alt="Laravel"></div>
+            <span>Laravel</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/flutter.webp" alt="Flutter"></div>
+            <span>Flutter</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/dart.png" alt="Dart"></div>
+            <span>Dart</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Databases & Tools -->
+      <div class="skill-group">
+        <p class="skill-label">
+          <span class="dot"></span>
+          DATABASES &amp; TOOLS
+        </p>
+
+        <div class="skill-icons">
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/mysql.png" alt="MySQL"></div>
+            <span>MySQL</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/git.png" alt="Git"></div>
+            <span>Git</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/github.png" alt="GitHub"></div>
+            <span>GitHub</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- AI Tools -->
+      <div class="skill-group">
+        <p class="skill-label">
+          <span class="dot"></span>
+          AI TOOLS &amp; ASSISTANTS
+        </p>
+
+        <div class="skill-icons">
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/chatgpt.webp" alt="ChatGPT"></div>
+            <span>ChatGPT</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/gemini.png" alt="Gemini"></div>
+            <span>Gemini</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/codex.png" alt="Codex"></div>
+            <span>Codex</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/claude.webp" alt="Claude"></div>
+            <span>Claude</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Office Software -->
+      <div class="skill-group">
+        <p class="skill-label">
+          <span class="dot"></span>
+          OFFICE SOFTWARE
+        </p>
+
+        <div class="skill-icons">
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/word.webp" alt="Word"></div>
+            <span>Word</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/excel.webp" alt="Excel"></div>
+            <span>Excel</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-logo"><img src="images/powerpoint.webp" alt="PowerPoint"></div>
+            <span>PowerPoint</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <span class="path-label">~/projects</span>
+      </div>
+
+      <div class="terminal-card project-card">
+        <div class="terminal-bar">
+          <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+          <span class="terminal-title">senior-project/</span>
+        </div>
+        <div class="terminal-body">
+          <div class="project-head">
+            <h3>ระบบบริหารจัดการงานติดตั้งเครื่องใช้ไฟฟ้า</h3>
+            <span class="tag-badge">SENIOR PROJECT</span>
+          </div>
+          <p class="project-desc">
+            เว็บแอปพลิเคชันสำหรับจัดการกระบวนการติดตั้ง ตั้งแต่การสร้างใบงาน มอบหมายช่าง รับสินค้า ติดตั้ง บันทึกผล ไปจนถึงการยืนยันงานและสรุปรายงาน โดยแยกสิทธิ์การใช้งานตามบทบาทของผู้ใช้
+          </p>
+          <div class="tag-row">
+            <span class="tag">#HTML</span>
+            <span class="tag">#CSS</span>
+            <span class="tag">#JavaScript</span>
+            <span class="tag">#PHP</span>
+            <span class="tag">#MySQL</span>
+          </div>
+
+          <div class="project-gallery">
+            <h4 class="project-gallery-title">ภาพหน้าจอและขั้นตอนการทำงาน</h4>
+            <div class="project-gallery-grid">
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/หน้าเข้าสู่ระบบโปรเจคจบ.png">
+                  <img class="project-step-image" src="images/หน้าเข้าสู่ระบบโปรเจคจบ.png" alt="หน้าเข้าสู่ระบบโปรเจคจบ" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">หน้าเข้าสู่ระบบโปรเจคจบ</h5>
+                  <p class="project-step-desc">หน้าเข้าสู่ระบบของโปรเจกต์</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/หน้าจัดการข้อมูลพนักงาน.png">
+                  <img class="project-step-image" src="images/หน้าจัดการข้อมูลพนักงาน.png" alt="หน้าจัดการข้อมูลพนักงาน" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">หน้าจัดการข้อมูลพนักงาน</h5>
+                  <p class="project-step-desc">จัดการข้อมูลพนักงานในระบบ</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/เพิ่มข้อมูลพนักงาน.png">
+                  <img class="project-step-image" src="images/เพิ่มข้อมูลพนักงาน.png" alt="เพิ่มข้อมูลพนักงาน" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">เพิ่มข้อมูลพนักงาน</h5>
+                  <p class="project-step-desc">เพิ่มข้อมูลพนักงานเข้าสู่ระบบ</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/หน้าสร้างใบติดตั้ง.png">
+                  <img class="project-step-image" src="images/หน้าสร้างใบติดตั้ง.png" alt="หน้าสร้างใบติดตั้ง" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">หน้าสร้างใบติดตั้ง</h5>
+                  <p class="project-step-desc">สร้างใบงานติดตั้งเครื่องใช้ไฟฟ้า</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/มอบหมายงานให้ช่าง.png">
+                  <img class="project-step-image" src="images/มอบหมายงานให้ช่าง.png" alt="มอบหมายงานให้ช่าง" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">มอบหมายงานให้ช่าง</h5>
+                  <p class="project-step-desc">มอบหมายใบงานให้ช่างผู้รับผิดชอบ</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/เลือกช่างเลือกวันและเวลามอบหมาย.png">
+                  <img class="project-step-image" src="images/เลือกช่างเลือกวันและเวลามอบหมาย.png" alt="เลือกช่างเลือกวันและเวลามอบหมาย" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">เลือกช่างเลือกวันและเวลามอบหมาย</h5>
+                  <p class="project-step-desc">เลือกช่าง วัน และเวลาสำหรับมอบหมายงาน</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/ช่างดูรายละเอียดงานที่ได้รับมอบหมาย และดูว่าจะรับงานหรือปฎิเสธ.png">
+                  <img class="project-step-image" src="images/ช่างดูรายละเอียดงานที่ได้รับมอบหมาย และดูว่าจะรับงานหรือปฎิเสธ.png" alt="ช่างดูรายละเอียดงานที่ได้รับมอบหมาย และดูว่าจะรับงานหรือปฎิเสธ" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">ช่างดูรายละเอียดงานที่ได้รับมอบหมาย และดูว่าจะรับงานหรือปฎิเสธ</h5>
+                  <p class="project-step-desc">ช่างตรวจสอบรายละเอียดและเลือกรับงานหรือปฏิเสธงาน</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/เมื่อติดตั้งเสร็จก็จะบันทึกรูปงานติดตั้งและรอหัวหน้าช่างยืนยัน.png">
+                  <img class="project-step-image" src="images/เมื่อติดตั้งเสร็จก็จะบันทึกรูปงานติดตั้งและรอหัวหน้าช่างยืนยัน.png" alt="เมื่อติดตั้งเสร็จก็จะบันทึกรูปงานติดตั้งและรอหัวหน้าช่างยืนยัน" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">เมื่อติดตั้งเสร็จก็จะบันทึกรูปงานติดตั้งและรอหัวหน้าช่างยืนยัน</h5>
+                  <p class="project-step-desc">บันทึกรูปงานติดตั้งหลังดำเนินงานเสร็จและรอการยืนยัน</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/หัวหน้าช่างเห็นงานที่ต้องตรวจสอบ.png">
+                  <img class="project-step-image" src="images/หัวหน้าช่างเห็นงานที่ต้องตรวจสอบ.png" alt="หัวหน้าช่างเห็นงานที่ต้องตรวจสอบ" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">หัวหน้าช่างเห็นงานที่ต้องตรวจสอบ</h5>
+                  <p class="project-step-desc">หัวหน้าช่างตรวจสอบงานติดตั้งที่รอยืนยัน</p>
+                </div>
+              </article>
+
+              <article class="project-step-card">
+                <a class="project-step-image-link" href="images/ดูรายละเอียดและยืนยัน.png">
+                  <img class="project-step-image" src="images/ดูรายละเอียดและยืนยัน.png" alt="ดูรายละเอียดและยืนยัน" loading="lazy">
+                </a>
+                <div class="project-step-body">
+                  <h5 class="project-step-title">ดูรายละเอียดและยืนยัน</h5>
+                  <p class="project-step-desc">ดูรายละเอียดงานและยืนยันผลการติดตั้ง</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-lightbox" id="project-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="ดูภาพ Screenshot ขนาดใหญ่">
+        <button class="project-lightbox-close" type="button" aria-label="ปิดรูป">×</button>
+        <button class="project-lightbox-nav project-lightbox-prev" type="button" aria-label="รูปก่อนหน้า">‹</button>
+        <div class="project-lightbox-content">
+          <img class="project-lightbox-image" src="" alt="">
+          <div class="project-lightbox-caption"></div>
+          <div class="project-lightbox-counter" aria-live="polite"></div>
+        </div>
+        <button class="project-lightbox-nav project-lightbox-next" type="button" aria-label="รูปถัดไป">›</button>
+      </div>
+
+      <!-- เพิ่มโปรเจกต์อื่น ๆ ได้โดยคัดลอกบล็อก .project-card ด้านบนไปวางซ้ำ -->
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <span class="path-label">~/contact</span>
+      </div>
+
+      <div class="terminal-card contact-card">
+        <div class="terminal-bar">
+          <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+          <span class="terminal-title">contact.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> cat contact.sh</p>
+          <div class="kv-list contact-list">
+            <div class="kv-row"><span>phone</span><strong>080-123-4676</strong></div>
+            <div class="kv-row"><span>email</span><strong>rattiphong1033@gmail.com</strong></div>
+            <div class="kv-row">
+              <span>line</span>
+              <div class="contact-line">
+                <strong>5625929300</strong>
+                <img src="images/line.jpg" alt="LINE QR Code" class="line-qr">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <button id="back-to-top" aria-label="กลับขึ้นด้านบน">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
